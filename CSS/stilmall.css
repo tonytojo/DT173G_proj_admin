@@ -1,0 +1,430 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, clear, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,                
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} 
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+} 
+ol, ul {
+	list-style: none;
+}
+
+ blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/*********************************************************************/
+/*                End reset CSS                                      */
+/*********************************************************************/
+
+/*  Default settings hx  */
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.5em; }
+
+body
+{
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   font-family: "Open Sans", sans-serif;
+   background-color: #dfebf2;
+   font-size: 1.1em;
+}
+
+/* Settings för Login */
+.wrapper
+{
+   max-width: 1280px;
+   margin-top: 2em;
+   padding: 1em;
+}
+.center-text
+{
+   text-align: center;
+}
+.login-header-name
+{
+   font-size: 4em;
+}
+.login-header-title
+{
+   font-size: 1.8em;
+}
+.login-form-wrapper
+{
+   width: 30em;
+}
+.login-form .submit-btn
+{
+   font-size:1em;
+}
+.center, .wrapper
+{
+   margin:0 auto;
+}
+
+
+/******************************************/
+/*        Generell settings               */
+/******************************************/
+.submit-btn, .btn, .reset
+{
+  width:100%;
+  background-color: #0082f0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.1em;
+  padding:10px;
+  margin-top: 10px;
+}
+
+input[type=text], input[type=password] {
+   width: 100%;
+   padding: 0.5em;
+   margin-bottom: 0.6em;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/*submit buttons in genomförda studier, Skapade webbplaser och erfarenhet */
+#addEducation,#addWebbsite,#addExperience
+{
+  width:200px;
+  float:right;
+  font-size: 1em;
+}
+
+.error
+{
+   color:red;
+   width:400px;
+   font-weight: bold;
+}
+
+.page-title
+{
+   text-align: center;
+   margin-top: 30px;
+}
+
+/* Form for genomförda studier, Skapade webbplaser och erfarenhet */
+.myform
+{
+   margin-top: 2em;
+   width:30em;
+   margin:0 auto;
+   display:none;
+   margin-bottom: 1em;
+}
+
+.reset{
+   float:right;
+   width:100px;
+   margin-right: 10px;
+   font-size: 1em;
+}
+
+
+/* Header */
+#mainheader
+{
+   background-color: #99DFEA;
+}
+
+#mainheader h1
+{
+   padding:20px;
+}
+
+/*************************************************/
+/*                 menu styling                  */
+/*************************************************/
+.menu
+{
+   overflow: hidden;
+   background-color: #3e3e3e;
+   border-bottom: 4px solid #55cedf;
+}
+
+.menu a
+{
+   float: left;
+   text-decoration: none;
+   font-weight: bold;
+   color: #fff;
+   padding:0.5em;;
+   margin-right: 1.5em;
+}
+
+nav.menu a:hover
+{
+   color:#999999;
+   text-decoration: none
+}
+
+.maincontent
+{
+   max-width: 1150px;
+   margin:0 auto;
+}
+
+
+/* Tabell settings  Form for genomförda studier, Skapade webbplaser och erfarenhet */
+table{
+   width:100%;
+   margin-bottom: 20px;
+}
+
+.year-month
+{
+   width:100px;
+}
+
+table tbody:nth-child(odd)
+{
+  background-color:lightblue;
+}
+
+th, td {
+   padding: 0.8em;
+   border: 1px solid #000;
+   text-align: left;
+}
+
+thead
+{
+   background-color: #3e3e3e;
+   color:#fff;
+}
+
+/*************************************************/
+/*          Formulär styling                     */
+/*************************************************/
+   form
+   {
+     border:1px solid #000;
+     background-color: #d9d9d9;
+     padding: 30px;
+     padding-bottom: 0;
+     margin-right: 1em;
+     margin-bottom: 1em;
+   } 
+
+    label 
+    {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    .col-25 
+    {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+     .col-75 
+    {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    } 
+    
+    /* Styling clear floats */
+    .rad:after
+    {
+      content: "";
+      display: table;
+      clear: both;
+    } 
+
+    /***************************************************************************/
+   /*                 Handling for the hamburger menu                         */
+   /***************************************************************************/
+   #toggle-menu 
+   {
+      height: 70%;
+      display: none; 
+      outline:none;
+      border:none;
+   } 
+
+   .menu
+   {
+      display: block;
+   }
+
+    /************************************************/
+    /*          Media Queries section               */
+    /************************************************/
+    @media screen and (max-width: 800px) 
+    {
+      table, tbody, td, th, thead, tr {
+         display: block;
+      }
+     
+      thead tr {
+         position: absolute;
+         top: -9999px;
+         left: -9999px;
+      }
+
+      tr {
+         border: 1px solid #000;
+         margin-bottom: 1em;
+      }
+     
+      #education td:nth-of-type(1):before {
+        content: "Lärosäte: ";
+      }
+
+      #education td:nth-of-type(2):before {
+         content: "Kursnamn: ";
+       }
+
+       #education td:nth-of-type(3):before {
+         content: "Kursår: ";
+       }
+
+       #webbsite td:nth-of-type(1):before {
+         content: "Titel: ";
+       }
+ 
+       #webbsite td:nth-of-type(2):before {
+          content: "Url: ";
+        }
+ 
+        #webbsite td:nth-of-type(3):before {
+          content: "Beskrivning: ";
+        }
+
+        #experience td:nth-of-type(1):before {
+         content: "Arbetsplats: ";
+       }
+ 
+       #webbexperiencesite td:nth-of-type(2):before {
+          content: "Titel: ";
+        }
+ 
+        #experience td:nth-of-type(3):before {
+          content: "Start: ";
+        }
+
+        #experience td:nth-of-type(4):before {
+         content: "Slut: ";
+       }
+       
+       #experience td:nth-of-type(5):before {
+         content: "Beskrivning: ";
+       }
+
+       .year-month{
+          width:100%;
+       }
+
+       tbody
+       {
+          padding:0 10px;
+       }
+   }
+
+    /* Små skärmar upp till max 600px */
+@media screen and (max-width: 600px) 
+{
+   nav 
+   { 
+      display:block; 
+      text-align:left;
+   }
+
+   .menu a
+   {
+      display:block;
+      float:none;
+   }
+
+   #toggle-menu 
+   {
+       position: fixed;
+       top:0px;
+       left: 0px;
+       width:45px;
+       height: 45px;
+       background: url(../images/hamburger.png) no-repeat 8px 12px;
+       background-size: 35px 35px;
+       width: 48px; 
+       text-indent: -9999px;
+       z-index: 999;
+       display: block;
+       outline:none;
+       border:none;    
+   }
+
+   tbody
+   {
+      padding:0 10px;
+   }
+
+   .col-25, .col-75
+   {
+   width: 100%;
+   margin-top: 0;
+   }
+
+   .myform
+   {
+      width:400px;
+      margin-bottom: 20px;
+   }
+
+   .submit-btn
+   {
+      width:100%;
+   }
+
+    .login-form-wrapper
+   {
+      width:450px;
+   } 
+
+   .login-form
+   {
+      margin:0;
+   }
+}
